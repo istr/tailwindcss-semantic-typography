@@ -92,6 +92,18 @@ module.exports = plugin(
       'main a': {
         textDecoration: 'underline',
       },
+      'main h1 a': {
+        textDecoration: 'none',
+      },
+      'main h2 a': {
+        textDecoration: 'none',
+      },
+      'main h3 a': {
+        textDecoration: 'none',
+      },
+      'main h4 a': {
+        textDecoration: 'none',
+      },
       'main a.btn': {
         textDecoration: 'none',
       },

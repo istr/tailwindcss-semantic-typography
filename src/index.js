@@ -89,22 +89,22 @@ module.exports = plugin(
       'article': {
         maxWidth: '65ch',
       },
-      'article a': {
+      'main a': {
         textDecoration: 'underline',
       },
-      'article h1 a': {
+      'main h1 a': {
         textDecoration: 'none',
       },
-      'article h2 a': {
+      'main h2 a': {
         textDecoration: 'none',
       },
-      'article h3 a': {
+      'main h3 a': {
         textDecoration: 'none',
       },
-      'article h4 a': {
+      'main h4 a': {
         textDecoration: 'none',
       },
-      'article a.btn': {
+      'main a.btn': {
         textDecoration: 'none',
       },
       'article ol': {

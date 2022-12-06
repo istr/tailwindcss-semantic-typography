@@ -80,136 +80,136 @@ module.exports = plugin(
         paddingBottom: em(12, 14),
         paddingLeft: em(16, 14),
       },
-      'article': {
-        maxWidth: '65ch',
+      'main': {
+        fontSize: theme('fontSize.base'),
       },
       'p + *': {
         marginTop: em(20, 16),
       },
-      'main': {
-        fontSize: theme('fontSize.base'),
+      'article': {
+        maxWidth: '65ch',
       },
-      'main a': {
+      'article a': {
         textDecoration: 'underline',
       },
-      'main h1 a': {
+      'article h1 a': {
         textDecoration: 'none',
       },
-      'main h2 a': {
+      'article h2 a': {
         textDecoration: 'none',
       },
-      'main h3 a': {
+      'article h3 a': {
         textDecoration: 'none',
       },
-      'main h4 a': {
+      'article h4 a': {
         textDecoration: 'none',
       },
-      'main a.btn': {
+      'article a.btn': {
         textDecoration: 'none',
       },
-      'main ol': {
+      'article ol': {
         marginTop: em(20, 16),
         marginBottom: em(20, 16),
       },
-      'main ul': {
+      'article ul': {
         marginTop: em(20, 16),
         marginBottom: em(20, 16),
         paddingLeft: em(26, 16),
         listStyleType: 'disc',
       },
-      'main li': {
+      'article li': {
         marginTop: em(8, 16),
         marginBottom: em(8, 16),
       },
-      'main ol': {
+      'article ol': {
         paddingLeft: em(26, 16),
         listStyleType: 'decimal',
       },
-      'main ol > li': {
+      'article ol > li': {
         paddingLeft: em(6, 16),
       },
-      'main ul > li': {
+      'article ul > li': {
         paddingLeft: em(6, 16),
       },
-      'main * > ul > li p': {
+      'article * > ul > li p': {
         marginTop: em(12, 16),
         marginBottom: em(12, 16),
       },
-      'main * > ul > li > *:first-child': {
+      'article * > ul > li > *:first-child': {
         marginTop: em(20, 16),
       },
-      'main * > ul > li > *:last-child': {
+      'article * > ul > li > *:last-child': {
         marginBottom: em(20, 16),
       },
-      'main * > ol > li > *:first-child': {
+      'article * > ol > li > *:first-child': {
         marginTop: em(20, 16),
       },
-      'main * > ol > li > *:last-child': {
+      'article * > ol > li > *:last-child': {
         marginBottom: em(20, 16),
       },
-      'main ul ul, main ul ol, main ol ul, main ol ol': {
+      'article ul ul, article ul ol, article ol ul, article ol ol': {
         marginTop: em(12, 16),
         marginBottom: em(12, 16),
       },
-      'main ol[type="A"]': {
+      'article ol[type="A"]': {
         listStyleType: 'upper-alpha',
       },
-      'main ol[type="a"]': {
+      'article ol[type="a"]': {
         listStyleType: 'lower-alpha',
       },
-      'main ol[type="A" s]': {
+      'article ol[type="A" s]': {
         listStyleType: 'upper-alpha',
       },
-      'main ol[type="a" s]': {
+      'article ol[type="a" s]': {
         listStyleType: 'lower-alpha',
       },
-      'main ol[type="I"]': {
+      'article ol[type="I"]': {
         listStyleType: 'upper-roman',
       },
-      'main ol[type="i"]': {
+      'article ol[type="i"]': {
         listStyleType: 'lower-roman',
       },
-      'main ol[type="I" s]': {
+      'article ol[type="I" s]': {
         listStyleType: 'upper-roman',
       },
-      'main ol[type="i" s]': {
+      'article ol[type="i" s]': {
         listStyleType: 'lower-roman',
       },
-      'main ol[type="1"]': {
+      'article ol[type="1"]': {
         listStyleType: 'decimal',
       },
-      'main hr': {
+      'article hr': {
         marginTop: em(48, 16),
         marginBottom: em(48, 16),
       },
-      'main hr + *': {
+      'article hr + *': {
         marginTop: '0',
       },
-      'main table': {
+      'article table': {
         fontSize: em(14, 16),
         lineHeight: round(24 / 14),
       },
-      'main thead th': {
+      'article thead th': {
         paddingRight: em(8, 14),
         paddingBottom: em(8, 14),
         paddingLeft: em(8, 14),
       },
-      'main thead th:first-child': {
+      'article thead th:first-child': {
         paddingLeft: '0',
       },
-      'main thead th:last-child': {
+      'article thead th:last-child': {
         paddingRight: '0',
       },
-      'main tbody td': {
+      'article tbody td': {
         paddingTop: em(8, 14),
         paddingRight: em(8, 14),
         paddingBottom: em(8, 14),
         paddingLeft: em(8, 14),
       },
-      'main tbody td:first-child': {
+      'article tbody td:first-child': {
         paddingLeft: '0',
       },
-      'main tbody td:last-child': {
+      'article tbody td:last-child': {
         paddingRight: '0',
       },
     });

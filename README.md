@@ -43,11 +43,13 @@ module.exports = {
 
 Quite simple: use semantic tags correctly. Do not abuse semantic tags in the
 navigational parts of your layouts. Put the content where you want typography
-to be styled into a `main` tag and everything else outside.
+to be styled into an `article` tag and everything else outside.
 You might want to use the
 [structural example in the HTML5 specification](https://html.spec.whatwg.org/multipage/grouping-content.html#the-main-element)
 as a starting point.
-If you want to generate readable line-lengths (65 characters), put your content
+
+If you want to generate readable line-lengths (65 characters), and some nice
+default styling for lists (`ol` and `ul`) put your content
 inside of an `article` tag.
 
 For the time being: choose your serif (headlines) and sans (body text)
@@ -89,7 +91,7 @@ This plug-in builds on the following assumptions:
   (so tailwindcss JIT optimization could be leveraged)
 - the content is structured using appropriate `section` and `article` tags
 - navigational content and asides are generally not rendered from markdown
-- you need more freedom for branding / styling everywhere outside of `main`
+- you need more freedom for branding / styling everywhere outside of `article`
 - you do not abuse tags that have a specific text semantics like
   `h1`, `h2`,..., `p`, `pre`, `code`,
   in the navigational sections of your design

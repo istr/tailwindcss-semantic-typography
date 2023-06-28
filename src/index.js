@@ -89,6 +89,9 @@ module.exports = plugin(
       'article': {
         maxWidth: '65ch',
       },
+      'article p': {
+        lineHeight: 1.7,
+      },
       'main a': {
         textDecoration: 'underline',
       },

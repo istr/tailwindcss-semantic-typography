@@ -93,7 +93,7 @@ module.exports = plugin(
         lineHeight: 1.7,
       },
       'main a': {
-        textDecoration: 'underline',
+        textDecoration: 'solid underline inherit 1px',
       },
       'main h1 a': {
         textDecoration: 'none',

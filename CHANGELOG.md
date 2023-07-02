@@ -1,3 +1,9 @@
+## v0.5.1
+
+### Changes
+
+* Use separate text-decoration and text-decoration-thickness values
+
 ## v0.5.0
 
 ### Changes

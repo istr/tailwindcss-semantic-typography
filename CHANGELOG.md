@@ -1,3 +1,9 @@
+## v0.5.0
+
+### Changes
+
+* Set main a text-decoration thickness to 1px
+
 ## v0.4.0
 
 ### Breaking changes

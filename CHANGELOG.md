@@ -1,3 +1,10 @@
+## v0.6.0
+
+### Changes
+
+* Clean up
+* Add selector for headings in sections
+
 ## v0.5.1
 
 ### Changes

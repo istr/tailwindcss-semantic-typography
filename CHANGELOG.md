@@ -1,3 +1,9 @@
+## v0.7.0
+
+### Breaking changes
+
+* Use fontFamily.bodyText and fontFamily.heading
+
 ## v0.6.0
 
 ### Changes

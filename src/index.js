@@ -11,9 +11,10 @@ const em = (px, base) => `${round(px / base)}em`;
 export default plugin(
   ({addBase, theme}) => addBase({
     'h1': {
-      fontFamily: theme('fontFamily.serif'),
+      fontFamily: theme('fontFamily.heading'),
       fontSize: theme('fontSize.4xl'),
-      fontWeight: '500',
+      fontFeatureSettings: theme('fontFamily.heading[1].fontFeatureSettings') || 'normal',
+      fontWeight: '501',
       lineHeight: round(36 / 30),
     },
     '* + h1, section > h1:first-child': {
@@ -23,8 +24,9 @@ export default plugin(
       marginTop: em(16, 20),
     },
     'h2': {
-      fontFamily: theme('fontFamily.serif'),
+      fontFamily: theme('fontFamily.heading'),
       fontSize: theme('fontSize.2xl'),
+      fontFeatureSettings: theme('fontFamily.heading[1].fontFeatureSettings') || 'normal',
       fontWeight: '500',
       lineHeight: round(28 / 20),
     },
@@ -35,8 +37,9 @@ export default plugin(
       marginTop: em(16, 20),
     },
     'h3': {
-      fontFamily: theme('fontFamily.serif'),
+      fontFamily: theme('fontFamily.heading'),
       fontSize: theme('fontSize.xl'),
+      fontFeatureSettings: theme('fontFamily.heading[1].fontFeatureSettings') || 'normal',
       fontWeight: '400',
       fontStyle: 'italic',
       lineHeight: round(28 / 18),
@@ -82,7 +85,10 @@ export default plugin(
       marginTop: em(20, 16),
     },
     'article': {
-      maxWidth: '65ch',
+      fontFamily: theme('fontFamily.bodyText'),
+      fontSize: theme('fontFamily.bodyText[1].fontSize') || theme('fontSize.base'),
+      fontFeatureSettings: theme('fontFamily.bodyText[1].fontFeatureSettings') || 'normal',
+      maxWidth: theme('fontFamily.bodyText[1].maxWidth') || '32em',
     },
     'article p': {
       lineHeight: 1.7,

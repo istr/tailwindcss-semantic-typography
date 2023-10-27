@@ -1,3 +1,9 @@
+## v0.7.1
+
+### Changes
+
+* Bump tailwindcss to version 3.3.5
+
 ## v0.7.0
 
 ### Breaking changes

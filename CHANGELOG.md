@@ -1,3 +1,13 @@
+## v0.8.0
+
+### Changes
+
+* Bump tailwindcss to version 3.4.1
+
+### Breaking changes
+
+* Justify and hyphenate article paragraphs
+
 ## v0.7.1
 
 ### Changes

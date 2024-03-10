@@ -91,7 +91,9 @@ export default plugin(
       maxWidth: theme('fontFamily.bodyText[1].maxWidth') || '32em',
     },
     'article p': {
+      hyphens: 'auto',
       lineHeight: 1.7,
+      textAlign: 'justify'
     },
     'main a': {
       textDecoration: 'underline',

@@ -16,8 +16,6 @@ export default plugin(
       fontFeatureSettings: theme('fontFamily.heading[1].fontFeatureSettings') || 'normal',
       fontWeight: '501',
       lineHeight: round(36 / 30),
-    },
-    '* + h1, section > h1:first-child': {
       marginTop: em(24, 30),
     },
     'h1 + *': {
@@ -29,8 +27,6 @@ export default plugin(
       fontFeatureSettings: theme('fontFamily.heading[1].fontFeatureSettings') || 'normal',
       fontWeight: '500',
       lineHeight: round(28 / 20),
-    },
-    '* + h2, section > h2:first-child': {
       marginTop: em(32, 20),
     },
     'h2 + *': {
@@ -43,8 +39,6 @@ export default plugin(
       fontWeight: '400',
       fontStyle: 'italic',
       lineHeight: round(28 / 18),
-    },
-    '* + h3, section > h3:first-child': {
       marginTop: em(28, 18),
     },
     'h3 + *': {
@@ -54,8 +48,6 @@ export default plugin(
       fontSize: theme('fontSize.lg'),
       fontWeight: '600',
       lineHeight: round(20 / 14),
-    },
-    '* + h4, section > h4:first-child': {
       marginTop: em(20, 14),
     },
     'h4 + *': {

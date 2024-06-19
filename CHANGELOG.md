@@ -1,3 +1,13 @@
+## v0.9.0
+
+### Changes
+
+* Bump tailwindcss to version 3.4.4
+
+### Breaking changes
+
+* Simplify h1, h2, h3, h4 marginTop rule
+
 ## v0.8.1
 
 ### Changes

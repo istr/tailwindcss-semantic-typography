@@ -1,3 +1,7 @@
+## v0.9.3
+
+* Bump tailwindcss to version 3.4.12
+
 ## v0.9.2
 
 * Bump tailwindcss to version 3.4.9

@@ -1,6 +1,6 @@
 {
   "name": "tailwindcss-semantic-typography",
-  "version": "0.9.3",
+  "version": "0.10.0",
   "description": "Bring semantic typography to tailwindcss",
   "main": "src/index.js",
   "license": "MIT",
@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified yet\" && exit 1"
   },
   "peerDependencies": {
-    "tailwindcss": ">=3.4.12"
+    "tailwindcss": ">=4.0.5"
   },
   "keywords": [
     "semantic-web",
@@ -25,6 +25,6 @@
   },
   "homepage": "https://github.com/istr/tailwindcss-semantic-typography#readme",
   "devDependencies": {
-    "tailwindcss": "^4.0.4"
+    "tailwindcss": "^4.0.5"
   }
 }

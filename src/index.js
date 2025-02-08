@@ -9,11 +9,11 @@ const rem = (px) => `${round(px / 16)}rem`;
 const em = (px, base) => `${round(px / base)}em`;
 
 export default plugin(
-  ({addBase, theme}) => addBase({
+  ({addBase}) => addBase({
     'h1': {
-      fontFamily: theme('fontFamily.heading'),
-      fontSize: theme('fontSize.4xl'),
-      fontFeatureSettings: theme('fontFamily.heading[1].fontFeatureSettings') || 'normal',
+      fontFamily: 'var(--font-heading, --font-serif)',
+      fontFeatureSettings: 'var(--font-heading--font-feature-settings, normal)',
+      fontSize: 'var(--text-4xl, inherit)',
       fontWeight: '501',
       lineHeight: round(36 / 30),
       marginTop: em(24, 30),
@@ -22,9 +22,9 @@ export default plugin(
       marginTop: em(16, 20),
     },
     'h2': {
-      fontFamily: theme('fontFamily.heading'),
-      fontSize: theme('fontSize.2xl'),
-      fontFeatureSettings: theme('fontFamily.heading[1].fontFeatureSettings') || 'normal',
+      fontFamily: 'var(--font-heading, --font-serif)',
+      fontFeatureSettings: 'var(--font-heading--font-feature-settings, normal)',
+      fontSize: 'var(--text-2xl, inherit)',
       fontWeight: '500',
       lineHeight: round(28 / 20),
       marginTop: em(32, 20),
@@ -33,9 +33,9 @@ export default plugin(
       marginTop: em(16, 20),
     },
     'h3': {
-      fontFamily: theme('fontFamily.heading'),
-      fontSize: theme('fontSize.xl'),
-      fontFeatureSettings: theme('fontFamily.heading[1].fontFeatureSettings') || 'normal',
+      fontFamily: 'var(--font-heading, --font-serif)',
+      fontFeatureSettings: 'var(--font-heading--font-feature-settings, normal)',
+      fontSize: 'var(--text-xl, inherit)',
       fontWeight: '400',
       fontStyle: 'italic',
       lineHeight: round(28 / 18),
@@ -45,7 +45,7 @@ export default plugin(
       marginTop: em(12, 18),
     },
     'h4': {
-      fontSize: theme('fontSize.lg'),
+      fontSize: 'var(--text-lg, inherit)',
       fontWeight: '600',
       lineHeight: round(20 / 14),
       marginTop: em(20, 14),
@@ -71,16 +71,16 @@ export default plugin(
       paddingLeft: em(16, 14),
     },
     'main': {
-      fontSize: theme('fontSize.base'),
+      fontSize: 'var(--text-base, inherit)',
     },
     'p + *': {
       marginTop: em(20, 16),
     },
     'article': {
-      fontFamily: theme('fontFamily.bodyText'),
-      fontSize: theme('fontFamily.bodyText[1].fontSize') || theme('fontSize.base'),
-      fontFeatureSettings: theme('fontFamily.bodyText[1].fontFeatureSettings') || 'normal',
-      maxWidth: theme('fontFamily.bodyText[1].maxWidth') || '32em',
+      fontFamily: 'var(--font-bodytext, --font-sans)',
+      fontSize: 'var(--font-bodytext--size, --text-base)',
+      fontFeatureSettings: 'var(--font-bodytext--feature-settings, normal)',
+      maxWidth: 'var(--font-bodytext--max-width, 32em)',
     },
     'article p': {
       hyphens: 'auto',

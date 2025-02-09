@@ -1,3 +1,7 @@
+## v0.10.1
+
+* Move home to https://git.ingo-struck.com/hugo-blog/tailwindcss-semantic-typography
+
 ## v0.10.0
 
 * Bump tailwindcss to version 4.0.5

@@ -1,6 +1,6 @@
 {
   "name": "tailwindcss-semantic-typography",
-  "version": "0.10.2",
+  "version": "0.10.3",
   "description": "Bring semantic typography to tailwindcss",
   "main": "src/index.js",
   "license": "MIT",
@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified yet\" && exit 1"
   },
   "peerDependencies": {
-    "tailwindcss": ">=4.0.9"
+    "tailwindcss": ">=4.0.14"
   },
   "keywords": [
     "semantic-web",
@@ -25,6 +25,6 @@
   },
   "homepage": "https://git.ingo-struck.com/hugo-blog/tailwindcss-semantic-typography#readme",
   "devDependencies": {
-    "tailwindcss": "^4.0.9"
+    "tailwindcss": "^4.0.14"
   }
 }

@@ -1,17 +1,34 @@
 import plugin from 'tailwindcss/plugin';
 
+// =============================================================================
+// UTILITY FUNCTIONS
+// =============================================================================
+
 const round = (num) =>
   num
-    .toFixed(2)
+    .toFixed(4)
     .replace(/(\.[0-9]+?)0+$/, '$1')
     .replace(/\.0$/, '');
+
 const rem = (px) => `${round(px / 16)}rem`;
 const em = (px, base) => `${round(px / base)}em`;
 
+// =============================================================================
+// TAILWINDCSS SEMANTIC TYPOGRAPHY PLUGIN
+// =============================================================================
+// Provides base styles for headings and article content.
+// References Tailwind's --text-* variables - does NOT define its own.
+//
+// Scaling strategy is left to the theme:
+// - Static: Tailwind defaults (--text-* as rem values)
+// - Fluid root: :root { font-size: clamp(...) } - all rem values scale
+// - Fluid per property: @theme { --text-*: clamp(...) }
+// =============================================================================
+
 export default plugin(
-  ({addBase}) => addBase({
+  ({ addBase }) => addBase({
     'h1': {
-      fontFamily: 'var(--font-heading, --font-serif)',
+      fontFamily: 'var(--font-heading, var(--font-serif))',
       fontFeatureSettings: 'var(--font-heading--font-feature-settings, normal)',
       fontSize: 'var(--text-4xl, inherit)',
       fontWeight: '501',
@@ -22,7 +39,7 @@ export default plugin(
       marginTop: em(16, 20),
     },
     'h2': {
-      fontFamily: 'var(--font-heading, --font-serif)',
+      fontFamily: 'var(--font-heading, var(--font-serif))',
       fontFeatureSettings: 'var(--font-heading--font-feature-settings, normal)',
       fontSize: 'var(--text-2xl, inherit)',
       fontWeight: '500',
@@ -33,7 +50,7 @@ export default plugin(
       marginTop: em(16, 20),
     },
     'h3': {
-      fontFamily: 'var(--font-heading, --font-serif)',
+      fontFamily: 'var(--font-heading, var(--font-serif))',
       fontFeatureSettings: 'var(--font-heading--font-feature-settings, normal)',
       fontSize: 'var(--text-xl, inherit)',
       fontWeight: '400',
@@ -77,15 +94,15 @@ export default plugin(
       marginTop: em(20, 16),
     },
     'article': {
-      fontFamily: 'var(--font-bodytext, --font-sans)',
-      fontSize: 'var(--font-bodytext--size, --text-base)',
+      fontFamily: 'var(--font-bodytext, var(--font-sans))',
+      fontSize: 'var(--font-bodytext--size, var(--text-base))',
       fontFeatureSettings: 'var(--font-bodytext--feature-settings, normal)',
-      maxWidth: 'var(--font-bodytext--max-width, 32em)',
+      maxWidth: 'var(--font-bodytext--max-width, 65ch)',
     },
     'article p': {
       hyphens: 'auto',
       lineHeight: 1.7,
-      textAlign: 'justify'
+      textAlign: 'justify',
     },
     'main a': {
       textDecoration: 'underline',
@@ -109,6 +126,8 @@ export default plugin(
     'article ol': {
       marginTop: em(20, 16),
       marginBottom: em(20, 16),
+      paddingLeft: em(26, 16),
+      listStyleType: 'decimal',
     },
     'article ul': {
       marginTop: em(20, 16),
@@ -119,10 +138,6 @@ export default plugin(
     'article li': {
       marginTop: em(8, 16),
       marginBottom: em(8, 16),
-    },
-    'article ol': {
-      paddingLeft: em(26, 16),
-      listStyleType: 'decimal',
     },
     'article ol > li': {
       paddingLeft: em(6, 16),

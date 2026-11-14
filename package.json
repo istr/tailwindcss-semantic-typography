@@ -1,6 +1,6 @@
 {
   "name": "tailwindcss-semantic-typography",
-  "version": "0.10.5",
+  "version": "0.10.6",
   "description": "Bring semantic typography to tailwindcss",
   "main": "src/index.js",
   "license": "MIT",
